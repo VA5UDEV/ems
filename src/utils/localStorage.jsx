@@ -1,0 +1,252 @@
+
+
+const employees = [
+  {
+    id: "1",
+    firstName: "BalChand",
+    email: "e@e.com",
+    password: "123",
+    position: "Frontend Developer (aka Wordpress wala)",
+    department: "Engineering",
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Design Homepage",
+        taskDescription: "Create the initial homepage layout using Figma.",
+        taskDate: "2025-03-05",
+        priority: "High",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Fix Navbar Issue",
+        taskDescription: "Resolve the bug causing the navbar to disappear on scroll.",
+        taskDate: "2025-02-28",
+        priority: "Medium",
+      },
+    ],
+    taskCount: { active: 1, newTask: 1, completed: 1, failed: 0 },
+  },
+  {
+    id: "2",
+    firstName: "Vihaan",
+    email: "employee2@example.com",
+    password: "123",
+    position: "Backend Developer",
+    department: "Engineering",
+    tasks: [
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Database Migration",
+        taskDescription: "Migrate the old MySQL database to PostgreSQL.",
+        taskDate: "2025-03-10",
+        priority: "High",
+      },
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Create API Endpoints",
+        taskDescription: "Develop RESTful API endpoints for user authentication.",
+        taskDate: "2025-03-07",
+        priority: "High",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Optimize Queries",
+        taskDescription: "Optimize slow SQL queries for better performance.",
+        taskDate: "2025-02-25",
+        priority: "Medium",
+      },
+    ],
+    taskCount: { active: 2, newTask: 1, completed: 1, failed: 1 },
+  },
+  {
+    id: "3",
+    firstName: "Ananya",
+    email: "employee3@example.com",
+    password: "123",
+    position: "QA Engineer",
+    department: "Quality Assurance",
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Write Unit Tests",
+        taskDescription: "Implement unit tests for the authentication module.",
+        taskDate: "2025-03-09",
+        priority: "High",
+      },
+    ],
+    taskCount: { active: 1, newTask: 1, completed: 0, failed: 0 },
+  },
+  {
+    id: "4",
+    firstName: "Ishaan",
+    email: "employee4@example.com",
+    password: "123",
+    position: "UI/UX Designer",
+    department: "Design",
+    tasks: [
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Redesign Dashboard",
+        taskDescription: "Improve the UI/UX of the admin dashboard.",
+        taskDate: "2025-02-20",
+        priority: "Medium",
+      },
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Implement Dark Mode",
+        taskDescription: "Add a toggle switch for dark mode across the app.",
+        taskDate: "2025-03-12",
+        priority: "Low",
+      },
+    ],
+    taskCount: { active: 1, newTask: 1, completed: 1, failed: 0 },
+  },
+  {
+    id: "5",
+    firstName: "Mira",
+    email: "employee5@example.com",
+    password: "123",
+    position: "DevOps Engineer",
+    department: "IT Operations",
+    tasks: [
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Fix Payment Gateway",
+        taskDescription: "Resolve issues with Stripe payment processing.",
+        taskDate: "2025-03-06",
+        priority: "High",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Optimize Images",
+        taskDescription: "Reduce image sizes for faster load times.",
+        taskDate: "2025-02-23",
+        priority: "Medium",
+      },
+    ],
+    taskCount: { active: 1, newTask: 0, completed: 1, failed: 1 },
+  },
+  {
+    id: "6",
+    firstName: "Devansh",
+    email: "employee6@example.com",
+    password: "123",
+    position: "Software Engineer",
+    department: "Engineering",
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Integrate Firebase",
+        taskDescription: "Set up Firebase authentication and real-time database.",
+        taskDate: "2025-03-08",
+        priority: "High",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Fix Email Notifications",
+        taskDescription: "Resolve issues with email notifications not sending.",
+        taskDate: "2025-03-04",
+        priority: "High",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Refactor Backend Code",
+        taskDescription: "Improve the structure of the backend codebase.",
+        taskDate: "2025-02-28",
+        priority: "Medium",
+      },
+    ],
+    taskCount: { active: 2, newTask: 1, completed: 1, failed: 1 },
+  },
+  {
+    id: "7",
+    firstName: "Riya",
+    email: "employee7@example.com",
+    password: "123",
+    position: "Security Analyst",
+    department: "Cybersecurity",
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Conduct Security Audit",
+        taskDescription: "Perform a security audit on the application.",
+        taskDate: "2025-03-11",
+        priority: "High",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Improve Accessibility",
+        taskDescription: "Ensure the app is accessible for all users.",
+        taskDate: "2025-02-22",
+        priority: "Medium",
+      },
+    ],
+    taskCount: { active: 1, newTask: 1, completed: 1, failed: 0 },
+  },
+];
+
+const admin = [
+  {
+    id: "ADMIN001",
+    firstName: "Admin",
+    email: "admin@me.com",
+    password: "123",
+  },
+];
+
+export const setLocalStorage = () => {
+  localStorage.setItem("employees", JSON.stringify(employees));
+  localStorage.setItem("admin", JSON.stringify(admin));
+};
+
+export const getLocalStorage = () => {
+  const employees = JSON.parse(localStorage.getItem("employees")) || [];
+  const admin = JSON.parse(localStorage.getItem("admin")) || [];
+
+  return { employees, admin };
+};
